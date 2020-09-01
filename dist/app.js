@@ -1,0 +1,1 @@
+let a="hello world",b="I've changed";console.log(a),console.log(b);
