@@ -6,8 +6,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2 {
+    text-transform: uppercase;
+}
+
 body {
-    max-width: 1000px;
+    max-width: 735px;
     margin: 0 auto;
     font-size: $p;
 }
@@ -47,7 +51,7 @@ nav {
 .hero {
     display: flex;
     justify-content: center;
-    margin: 70px auto 0;
+    margin: 70px auto 120px;
     .profile-img {
         width: 250px;
         display: inline-block;
