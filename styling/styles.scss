@@ -48,12 +48,22 @@ nav {
     }
 }
 
-.hero {
+.section {
     display: flex;
     justify-content: center;
     margin: 70px auto 120px;
+    opacity: 1;
+    transition: .5s ease;
+    height: 230px;
+    .inner {
+        position: absolute;
+        left: 50px;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+    }
     .profile-img {
-        width: 250px;
+        width: 230px;
         display: inline-block;
         img {
             width: 100%;
@@ -100,4 +110,11 @@ nav {
             }
         }
     }
+}
+.slide {
+    left: 50% !important;
+    transform: translate(-50%, 0);
+}
+.hidden {
+    opacity: 0;
 }
