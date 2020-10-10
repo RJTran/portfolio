@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 h1, h2 {
@@ -11,7 +12,6 @@ h1, h2 {
 }
 
 body {
-    max-width: 735px;
     margin: 0 auto;
     font-size: $p;
 }
@@ -32,9 +32,10 @@ nav {
         a {
             margin: 10px;
             transition: ease .3s;
+            position: relative;
             &:hover {
                 cursor: pointer;
-                color: #333;
+                color: $link-color;
             }
         }
     }
@@ -50,11 +51,16 @@ nav {
 
 .section {
     display: flex;
+    max-width: 1100px;
     justify-content: center;
-    margin: 70px auto 120px;
+    margin: 70px auto;
     opacity: 1;
     transition: .5s ease;
-    height: 230px;
+    height: auto;
+    &.start {
+        max-width: 100%;
+        justify-content: left;
+    }
     .inner {
         position: absolute;
         left: 50px;
@@ -63,22 +69,24 @@ nav {
         -moz-transition: 1s;
     }
     .profile-img {
-        width: 230px;
+        width: 50%;
         display: inline-block;
-        img {
-            width: 100%;
-        }
+        height: 400px;
+        background: url(/imgs/profile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .desc {
         display: inline-block;
         position: relative;
-        width: 500px;
-        height: 250px;
+        width: 520px;
+        height: 400px;
         h1 {
             position: absolute;
             text-transform: uppercase;
             top: 20px;
-            left: -30px;
+            left: 30px;
             font-size: $h2;
         }
         p {
@@ -91,7 +99,7 @@ nav {
         .lists {
             position: absolute;
             display: flex;
-            top: 190px;
+            top: 210px;
             left: 30px;
             ul:first-child {
                 margin-right: 40px;
@@ -110,6 +118,56 @@ nav {
             }
         }
     }
+    &.experience {
+        display: block;
+        max-width: 970px;
+        h2 {
+            text-align: left;
+        }
+        .tabs {
+            ul {
+                list-style-type: none;
+                padding: 20px 0;
+                text-align: center;
+                li {
+                    display: inline-block;
+                    width: 290px;
+                    height: 35px;
+                    border-bottom: 2px solid #999;
+                    margin: 0 20px;
+                    transition: .1s;
+                    &:hover {
+                        border-bottom: 4px solid $link-color;
+                    }
+                    a {
+                        font-size: $p + 2;
+                        font-weight: 600;
+                        padding: 10px 20px 16px;
+                        transition: .1s;
+                        color:#999;
+                        text-decoration: none;
+                        &:hover {
+                            color: $link-color;
+                            font-weight: 700;
+                        }
+                    }
+                    &:first-child {
+                        width: 260px;
+                    }
+                    &:last-child {
+                        width: 280px;
+                    }
+                    &.tab-active {
+                        border-bottom: 4px solid $link-color;
+                        a {
+                            font-weight: 700;
+                            color: $link-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .slide {
     left: 50% !important;
@@ -117,4 +175,26 @@ nav {
 }
 .hidden {
     opacity: 0;
+}
+.home-email-link {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.active-link {
+    font-weight: bold;
+    color: $link-color;
+    &:after {
+        content:'';
+        background-color: #d2232a;
+        width: 20px;
+        height: 2px;
+        border-radius: 90px;
+        position: absolute;
+        top: 23px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
