@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #999;
+}
+
 h1, h2 {
     text-transform: uppercase;
 }
@@ -33,6 +37,7 @@ nav {
             margin: 10px;
             transition: ease .3s;
             position: relative;
+            text-decoration: none;
             &:hover {
                 cursor: pointer;
                 color: $link-color;
@@ -82,25 +87,19 @@ nav {
         position: relative;
         width: 520px;
         height: 400px;
+        margin: 30px;
         h1 {
-            position: absolute;
             text-transform: uppercase;
-            top: 20px;
-            left: 30px;
             font-size: $h2;
+            margin-bottom: 10px;
         }
         p {
-            position: absolute;
-            top: 70px;
-            left: 30px;
             line-height: 25px;
             font-size: $p;
+            margin-bottom: 20px;
         }
         .lists {
-            position: absolute;
             display: flex;
-            top: 210px;
-            left: 30px;
             ul:first-child {
                 margin-right: 40px;
             }
@@ -121,6 +120,39 @@ nav {
     &.experience {
         display: block;
         max-width: 970px;
+        .tabs {
+            a {
+                cursor: pointer;
+            }
+        }
+        .exp-content {
+            padding: 0 20px;
+            position: relative;
+            h3 {
+                font-size: 20px;
+            }
+            ul {
+                li {
+                    text-indent: 17px;
+                    line-height: 25px;
+                }
+            }
+            .exp-item {
+                position: absolute;
+                transition: 1s ease;
+                i {
+                    font-size: 12px;
+                    color: #666;
+                    margin-bottom: 2px;
+                    display: inline-block;
+                }
+                p {
+                    display: inline-block;
+                    margin: 10px 0;
+                    line-height: 25px;
+                }
+            }
+        }
         h2 {
             text-align: left;
         }
@@ -144,7 +176,6 @@ nav {
                         font-weight: 600;
                         padding: 10px 20px 16px;
                         transition: .1s;
-                        color:#999;
                         text-decoration: none;
                         &:hover {
                             color: $link-color;
@@ -173,8 +204,9 @@ nav {
     left: 50% !important;
     transform: translate(-50%, 0);
 }
-.hidden {
+.tab-hidden {
     opacity: 0;
+    top: 220px;
 }
 .home-email-link {
     color: $link-color;
@@ -185,7 +217,7 @@ nav {
 }
 .active-link {
     font-weight: bold;
-    color: $link-color;
+    color: $link-color !important;
     &:after {
         content:'';
         background-color: #d2232a;
@@ -197,4 +229,28 @@ nav {
         left: 50%;
         transform: translate(-50%, 0);
     }
+}
+
+@keyframes appear {
+    0%   {top: 220px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+}
+
+@keyframes disappear {
+    0%   {top: 0px; opacity: 1;}
+    100% {top: 220px; opacity: 0;}
+}
+.animateAppear {
+  animation-name: appear;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.animateDisappear {
+  animation-name: disappear; 
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }

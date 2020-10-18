@@ -5,15 +5,17 @@
         <title>Ryan Tran</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/dist/styles.css">
+        <link rel="stylesheet" href="../dist/styles.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
         <nav>
             <div class="logo"><a href="/"><img src="/imgs/logo.png"></a></div>
             <ul class="navList">
-                <li><a class="active-link">About</a></li>
-                <li><a>Work</a></li>
-                <li><a>Contact</a></li>
+                <li><a class="active-link" href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="section start">
@@ -31,92 +33,61 @@
                     </ul>
                     <ul>
                         <li>UX Tools</li>
-                        <li>Sketch App</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Adobe Photoshop</li>
+                        <li>Sketch</li>
+                        <li>Figma</li>
                         <li>Adobe XD</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--
-        <div class="section start">
-            <div class="profile-img">
-                <img src="/imgs/profile.jpg">
-            </div>
-            <div class="desc">
-                <h1>Hello! My name is Ryan!</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type unknown printer took a galley of type </p>
-                <div class="lists">
-                    <ul>
-                        <li>Dev Tools</li>
-                        <li>HTML</li>
-                        <li>CSS/SASS</li>
-                        <li>JavaScript</li>
-                        <li>Gulp</li>
-                    </ul>
-                    <ul>
-                        <li>UI Tools</li>
-                        <li>Sketch App</li>
                         <li>Adobe Illustrator</li>
                         <li>Adobe Photoshop</li>
                     </ul>
                 </div>
             </div>
         </div>
-    -->
         <div class="section experience">
             <h2>Experience</h2>
             <div class="tabs">
                 <ul>
-                    <li class="tab-active"><a href="">Crescendo Interactive Inc.</a></li>
-                    <li><a href="">Aliquantum International Inc.</a></li>
-                    <li><a href="">eLearning, Cal Poly Pomona</a></li>
+                    <li class="tab-active"><a id="cres">Crescendo Interactive Inc.</a></li>
+                    <li><a id="aqi">Aliquantum International Inc.</a></li>
+                    <li><a id="cpp">eLearning, Cal Poly Pomona</a></li>
                 </ul>
             </div>
             <div class="exp-content">
-                <div class="exp1">
-                    <p>June 2019 - present</p>
+                <div class="exp-item animateAppear" id="tab1">
+                    <i>July 2019 - present</i>
                     <h3>Web Designer</h3>
-                    <p>
-                        Crescendo Interactive is a philanthropy company creating software tools to promote gift planning marketing solutions for organizations including non-profits and universities.
+                    <p>Crescendo Interactive is a philanthropy company creating software tools to promote gift planning marketing solutions for organizations including non-profits and universities.
                         <ul>
                             <li>Designed planned giving websites for universities and non-profit organizations using Adobe Photoshop.</li>
                             <li>Reviewed and edited CSS ensuring consistency from design to development.</li>
-                            <li>Worked on the redesign and development of company websites using HTML, CSS, and. JavaScript.</li>
+                            <li>Worked on the redesign and development of company websites using HTML, CSS, and JavaScript.</li>
                         </ul>
                     </p>
                 </div>
-                <div class="exp2 hidden">
-                    <p>June 2019 - present</p>
-                    <h3>Web Designer</h3>
-                    <p>
-                        Crescendo Interactive is a philanthropy company creating software tools to promote gift planning marketing solutions for organizations including non-profits and universities.
+                <div class="exp-item tab-hidden" id="tab2">
+                    <i>July 2018 - June 2019</i>
+                    <h3>Jr. Designer</h3>
+                    <p>Aliquantum International is a manufacturing, licensing, and distribution company delivering lifestyle brands and products to the North American market.
                         <ul>
-                            <li>Designed planned giving websites for universities and non-profit organizations using Adobe Photoshop.</li>
-                            <li>Reviewed and edited CSS ensuring consistency from design to development.</li>
-                            <li>Worked on the redesign and development of company websites using HTML, CSS, and. JavaScript.</li>
+                            <li>Completed corporate site redesign in Wordpress, creating custom styling with CSS.</li>
+                            <li>Built and maintained rewards page promotions content on BigCommerce website, jellybeet.com.</li>
+                            <li>Redesigned corporate decks to feature high quality products in an engaging layout design.</li>
+                            <li>Photographed and edited lifestyle photography to create various sized homepage banners on the jellybeet website.</li>
                         </ul>
                     </p>
                 </div>
-                <div class="exp3 hidden">
-                    <p>June 2019 - present</p>
-                    <h3>Web Designer</h3>
-                    <p>
-                        Crescendo Interactive is a philanthropy company creating software tools to promote gift planning marketing solutions for organizations including non-profits and universities.
+                <div class="exp-item tab-hidden" id="tab3">
+                    <i>September 2015 - June 2018</i>
+                    <h3>Specialized Graphic Design Instructional Technology Assistant</h3>
+                    <p>eLearning is a technology resource center for faculty and staff of Cal Poly Pomona, offering a variety of educational tools to enhance teaching methodologies and effectiveness.
                         <ul>
-                            <li>Designed planned giving websites for universities and non-profit organizations using Adobe Photoshop.</li>
-                            <li>Reviewed and edited CSS ensuring consistency from design to development.</li>
-                            <li>Worked on the redesign and development of company websites using HTML, CSS, and. JavaScript.</li>
+                            <li>Created teaching infographics, course banners, and event posters.</li>
+                            <li>Redesigned powerpoint lectures and PDF’s to be accessible.</li>
+                            <li>Assisted faculty and staff in developing skills in Blackboard, Microsoft Word, Adobe Acrobat, Adobe Dreamweaver, Adobe Connect, iClicker, etc.</li>
                         </ul>
                     </p>
                 </div>
             </div>
         </div>
         <script src="/dist/app.js" async defer></script>
-        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-        <script>
-            
-        </script>
     </body>
 </html>
