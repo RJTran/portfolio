@@ -120,6 +120,7 @@ nav {
     &.experience {
         display: block;
         max-width: 970px;
+        min-height: 350px;
         .tabs {
             a {
                 cursor: pointer;
@@ -199,6 +200,33 @@ nav {
             }
         }
     }
+    &.work {
+        display: block;
+        max-width: 970px;
+        h2 {
+            margin-bottom: 20px;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            li {
+                list-style-type: none;
+                background-color: black;
+                margin: 5px;
+                background-image: url('/imgs/profile.jpg');
+                background-size: contain;
+                &::before {
+                    content: "";
+                    padding-bottom: 100%;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                a {
+                    padding: 100px;
+                }
+            }
+        }
+    }
 }
 .slide {
     left: 50% !important;
@@ -232,13 +260,13 @@ nav {
 }
 
 @keyframes appear {
-    0%   {top: 220px; opacity: 0;}
+    0%   {top: 100px; opacity: 0;}
     100% {top: 0px; opacity: 1;}
 }
 
 @keyframes disappear {
     0%   {top: 0px; opacity: 1;}
-    100% {top: 220px; opacity: 0;}
+    100% {top: 100px; opacity: 0;}
 }
 .animateAppear {
   animation-name: appear;
@@ -246,6 +274,7 @@ nav {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
+  z-index: 99;
 }
 .animateDisappear {
   animation-name: disappear; 
@@ -253,4 +282,5 @@ nav {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
+  z-index: 0;
 }
