@@ -11,22 +11,29 @@ a {
     color: #999;
 }
 
-h1, h2 {
+h1 {
     text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 body {
     margin: 0 auto;
     font-size: $p;
+    color: #fff;
+    background-color: #333;
 }
 
 nav {
-    margin: 40px 0;
+    margin: 40px auto;
+    max-width: 1100px;
 }
 
 .navList {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     list-style: none;
     li {
         text-transform: uppercase;
@@ -54,17 +61,40 @@ nav {
     }
 }
 
+.bg-shape {
+    position: absolute;
+    top: 100px;
+    width: 1500px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.dg-shape {
+    position: absolute;
+    top: 500px;
+    width: 2100px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    opacity: .55;
+}
+
 .section {
     display: flex;
     max-width: 1100px;
     justify-content: center;
-    margin: 70px auto;
+    margin: 190px auto;
     opacity: 1;
     transition: .5s ease;
     height: auto;
+    position: relative;
+    z-index: 10;
     &.start {
-        max-width: 100%;
+        width: 100%;
         justify-content: left;
+        min-height: 500px;
+        position: relative;
     }
     .inner {
         position: absolute;
@@ -82,11 +112,17 @@ nav {
         background-repeat: no-repeat;
         background-position: center;
     }
+    .phone {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
     .desc {
         display: inline-block;
-        position: relative;
-        width: 520px;
-        height: 400px;
+        position: absolute;
+        left: 0px;
+        width: 500px;
         margin: 30px;
         h1 {
             text-transform: uppercase;
@@ -143,7 +179,7 @@ nav {
                 transition: 1s ease;
                 i {
                     font-size: 12px;
-                    color: #666;
+                    color: #ddd;
                     margin-bottom: 2px;
                     display: inline-block;
                 }
@@ -206,23 +242,22 @@ nav {
         h2 {
             margin-bottom: 20px;
         }
-        ul {
-            display: grid;
-            grid-template-columns: 33.33% 33.33% 33.33%;
-            li {
-                list-style-type: none;
-                background-color: black;
-                margin: 5px;
-                background-image: url('/imgs/profile.jpg');
-                background-size: contain;
-                &::before {
-                    content: "";
-                    padding-bottom: 100%;
-                    display: inline-block;
-                    vertical-align: top;
+        .flex-container {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            a {
+                &:hover {
+                    cursor: pointer;
+                    opacity: .7;
                 }
-                a {
-                    padding: 100px;
+                width: 31%;
+                margin: 10px;
+                transition: .3s ease;
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
@@ -248,7 +283,7 @@ nav {
     color: $link-color !important;
     &:after {
         content:'';
-        background-color: #d2232a;
+        background-color: #5AFFE6;
         width: 20px;
         height: 2px;
         border-radius: 90px;

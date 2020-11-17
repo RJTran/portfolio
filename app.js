@@ -35,6 +35,10 @@ function throttle(fn, wait) {
 
 $('#cres').on('click', () => {
   if(!$('#tab1').hasClass('animateAppear')) {
+    $('#tab1').css('display', 'block');
+    setTimeout(() => {
+      $('#tab2, #tab3').css('display', 'none');
+    }, 250);
     $('#aqi, #cpp').parent().removeClass('tab-active');
     $('#cres').parent().addClass('tab-active');
     $('#tab2, #tab3').removeClass('animateAppear').addClass('animateDisappear tab-hidden');
@@ -43,6 +47,10 @@ $('#cres').on('click', () => {
 });
 $('#aqi').on('click', () => {
   if(!$('#tab2').hasClass('animateAppear')) {
+    $('#tab2').css('display', 'block');
+    setTimeout(() => {
+      $('#tab1, #tab3').css('display', 'none');
+    }, 250);
     $('#cres, #cpp').parent().removeClass('tab-active');
     $('#aqi').parent().addClass('tab-active');
     $('#tab1, #tab3').removeClass('animateAppear').addClass('animateDisappear tab-hidden');
@@ -51,6 +59,10 @@ $('#aqi').on('click', () => {
 });
 $('#cpp').on('click', () => {
   if(!$('#tab3').hasClass('animateAppear')) {
+    $('#tab3').css('display', 'block');
+    setTimeout(() => {
+      $('#tab1, #tab2').css('display', 'none');
+    }, 250);
     $('#cres, #aqi').parent().removeClass('tab-active');
     $('#cpp').parent().addClass('tab-active');
     $('#tab1, #tab2').removeClass('animateAppear').addClass('animateDisappear tab-hidden');
@@ -77,3 +89,6 @@ $('#cpp').on('click', () => {
   //   $('.nav').find('.active-link').removeClass('active-link');
   //   $('#myAccount').addClass('active-link');
   // });
+
+// var cw = $('.grid-container a').width();
+// $('.grid-container a').css({'height':cw+'px'});

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400px" height="459px" viewBox="0 0 1400 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>hero-shapes</title>
+    <g id="HI-FIDELITY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="HOME" transform="translate(-19.000000, -203.000000)">
+            <g id="intro" transform="translate(19.178085, 182.750000)">
+                <g id="hero-shapes" transform="translate(0.321915, 20.353448)">
+                    <circle id="Oval" fill="#702370" cx="66.8428222" cy="67.0019157" r="66.5552363"></circle>
+                    <circle id="Oval" fill="#68FFE8" opacity="0.3" cx="115.530881" cy="123.884232" r="31.7142401"></circle>
+                    <circle id="Oval" stroke="#00FFFF" opacity="0.7" cx="791.356871" cy="106.309706" r="39.3077905"></circle>
+                    <circle id="Oval" fill-opacity="0.4" fill="#B2F758" cx="1214.3623" cy="420.536619" r="19.6538953"></circle>
+                    <rect id="Rectangle" stroke="#00FF00" opacity="0.7" x="463.047484" y="339.699713" width="73.4568105" height="15.1871009" rx="7.59355045"></rect>
+                    <rect id="Rectangle" stroke="#FFF47F" opacity="0.7" x="1230.44276" y="27.2474457" width="168.518565" height="34.8409962" rx="17.4204981"></rect>
+                    <rect id="Rectangle" fill-opacity="0.3" fill="#FFF47F" x="791.356871" y="80.7103536" width="110.776501" height="22.919276" rx="11.459638"></rect>
+                    <rect id="Rectangle" fill-opacity="0.3" fill="#B2F7A5" x="12.3479307" y="420.536619" width="178.671775" height="36.9665742" rx="18.4832871"></rect>
+                    <rect id="Rectangle" fill-opacity="0.3" fill="#FF00FF" x="279.621328" y="258.404055" width="39.3358985" height="18.7605364" rx="9.3802682"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
