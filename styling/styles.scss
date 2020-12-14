@@ -248,9 +248,10 @@ nav {
             flex-wrap: wrap;
             justify-content: center;
             a {
+                position: relative;
+                background-color: black;
                 &:hover {
                     cursor: pointer;
-                    opacity: .7;
                 }
                 width: 31%;
                 margin: 10px;
@@ -258,6 +259,22 @@ nav {
                 img {
                     width: 100%;
                     height: 100%;
+                }
+                .workTxt {
+                    opacity: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .2s ease;
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    font-size: $p2;
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
         }

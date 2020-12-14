@@ -70,25 +70,20 @@ $('#cpp').on('click', () => {
   }
 });
 
-  // $('#home').on('click', function() {
-  //   $('.container').hide();
-  //   $('.container.home').css('display', 'flex');
-  //   $('.nav').find('.active-link').removeClass('active-link');
-  //   $('#home').addClass('active-link');
-  // });
-  // $('#faq').on('click', function() {
-  //   $('.container').hide();
-  //   $('.container.faq').css('display', 'block');
-  //   $('.content').css('display', 'flex');
-  //   $('.nav').find('.active-link').removeClass('active-link');
-  //   $('#faq').addClass('active-link');
-  // });
-  // $('#myAccount').on('click', function() {
-  //   $('.container').hide();
-  //   $('.container.myAccount').css('display', 'flex');
-  //   $('.nav').find('.active-link').removeClass('active-link');
-  //   $('#myAccount').addClass('active-link');
-  // });
+$('#work').on('click', function () {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-// var cw = $('.grid-container a').width();
-// $('.grid-container a').css({'height':cw+'px'});
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+          $('html,body').animate({
+              scrollTop: target.offset().top
+          }, 1000);
+          return false;
+      }
+  }
+});
+
+// git add .
+// git commit -m "message"
+// git push
