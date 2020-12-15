@@ -13,9 +13,7 @@
     nav {
         margin: 40px 20px 40px auto;
     }
-    body {
-        margin: 0 30px;
-    }
+    
     .section.experience .tabs ul li {
         width: 270px;
         margin: 0 5px;
@@ -106,14 +104,51 @@
     .section .desc {
         margin: 0 auto;
         width: 100%;
+        top: 180px;
     }
     .section .phone {
-        bottom: -230px;
+        bottom: 50px;
     }
     .section.start {
-        margin: 70px auto 250px;
+        margin: 100px auto 150px;
+        h1 {
+            font-size: 45px !important;
+        }
     }
     .navList {
         justify-content: center;
+    }
+    nav {
+        margin: 40px auto;
+        position: relative;
+        z-index: 99;
+    }
+    body {
+        padding: 0 20px;
+    }
+    .section.experience {
+        margin-bottom: 200px;
+        min-height: 510px;
+        margin-top: 150px;
+    }
+    .section.experience .tabs ul li {
+        width: 45px;
+        margin: 30px 3px;
+    }
+    .section.experience .tabs ul li:first-child, .section.experience .tabs ul li:last-child {
+        width: 100px;
+    }
+    .section.experience .tabs ul li a {
+        padding: 10px 0 16px;
+    }
+    .section.work .flex-container a {
+        width: 45%;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .section.start {
+        margin: 80px auto 190px;
     }
 }
