@@ -70,6 +70,7 @@ $('#cpp').on('click', () => {
   }
 });
 
+
 $(".scroll").on("click", function(event){
   event.preventDefault();
   //calculate destination place
