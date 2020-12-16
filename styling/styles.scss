@@ -29,6 +29,9 @@ body {
     font-size: $p;
     color: #fff;
     background-color: #333;
+}
+
+.main {
     position: relative;
     width: 100%;
     overflow-x: hidden;
@@ -353,7 +356,65 @@ nav {
   z-index: 0;
 }
 
+/*** Work Pages ***/
 
+.hero {
+    display: flex;
+    height: 600px;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 650px;
+        position: absolute;
+        right: 0;
+        top: -50px;
+    }
+}
+.hero-desc {
+    display: flex;
+    padding-right: 30px;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 30px;
+    .inner-hero-box {
+        width: 500px;
+        h1 {
+            margin: 10px 0;
+        }
+        .small-header {
+            margin: 20px 0 10px;
+            position: relative;
+            &::after {
+                content: '';
+                width: 15px;
+                background-color: #5affe6;
+                height: 2px;
+                position: absolute;
+                top: 28px;
+                left: 0;
+            }
+        }
+        p {
+            line-height: 25px;
+        }
+        ul {
+            line-height: 25px;
+            li {
+                list-style-type: none;
+            }
+        }
+        img {
+            width: 75px;
+        }
+    }
+}
 
 
 @import 'media_queries';
