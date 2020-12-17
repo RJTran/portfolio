@@ -20,7 +20,6 @@ function scanDocument() {
   });
 }
 
-
 window.addEventListener("scroll", throttle(scanDocument, 50));
 
 function throttle(fn, wait) {
@@ -57,6 +56,7 @@ $('#aqi').on('click', () => {
     $('#tab2').removeClass('animateDisappear').addClass('animateAppear');
   }
 });
+
 $('#cpp').on('click', () => {
   if(!$('#tab3').hasClass('animateAppear')) {
     $('#tab3').css('display', 'block');
@@ -70,18 +70,24 @@ $('#cpp').on('click', () => {
   }
 });
 
-
 $(".scroll").on("click", function(event){
   event.preventDefault();
-  //calculate destination place
   var dest=0;
-  if($(this.hash).offset().top > $(document).height()-$(window).height()){
+  if ($(this.hash).offset().top > $(document).height()-$(window).height()){
        dest=$(document).height()-$(window).height();
-  }else{
+  } else {
        dest=$(this.hash).offset().top - 25;
   }
-  //go to destination
   $('html,body').animate({scrollTop:dest}, 200,'swing');
+});
+
+
+$('.colors > div').on('mouseover', function() {
+  $(this).children().addClass('opac');
+});
+
+$('.colors > div').on('mouseout', function() {
+  $(this).children().removeClass('opac');
 });
 
 // git add .
