@@ -608,6 +608,87 @@ nav {
     }
 }
 
+.work-content-3 {
+    background-color: #222;
+    position: relative;
+    h1 {
+        text-align: center;
+        padding: 70px 50px 50px;
+    }
+    .inner-content {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 60px 60px;
+        display: flex;
+        justify-content: space-evenly;
+        .nav-icons {
+            div {
+                width: 180px;
+                margin: 40px 0;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 40px;
+                    display: inline-block;
+                    margin-right: 30px;
+                }
+                p {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .drink-icons {
+            h2 {
+                margin-left: 30px;
+            }
+            .inner-content {
+                display: flex;
+                flex-wrap: wrap;
+                width: 420px;
+                padding: 40px 0 0 0;
+                justify-content: end;
+                div {
+                    flex-direction: column;
+                    flex: 0 0 120px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-bottom: 40px;
+                    img {
+                        max-width: 48px;
+                        max-height: 65px;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+                .sparkling, .coconut, .energy, .whiskey, .milkshake {
+                    margin-bottom: 22px;
+                }
+            }
+        }
+
+        .buttons {
+            .nav-icons {
+                width: 240px;
+                div {
+                    width: 320px;
+                }
+            }
+            .toggleoff img, .toggleon img {
+                width: 50px;
+            }
+            .defaultbtn img, .darkbtn img, .deletebtn img {
+                width: 100px;
+            }
+        }
+    }
+}
+
 .opac {
     opacity: 1 !important;
     transition: .3s ease;
