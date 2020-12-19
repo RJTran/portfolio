@@ -258,6 +258,7 @@ nav {
     &.work {
         display: block;
         max-width: 970px;
+        margin-bottom: 30px;
         h2 {
             margin-bottom: 20px;
         }
@@ -742,9 +743,35 @@ nav {
     }
 }
 
+.footer {
+    text-align: center;
+    padding: 20px;
+    opacity: .3;
+}
+
 .opac {
     opacity: 1 !important;
     transition: .3s ease;
+}
+
+.scrollTop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 4px solid #fff;
+    border-radius: 999px;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+    opacity: 0;
+    svg {
+        width: 20px;
+        color: #fff;
+    }
 }
 
 

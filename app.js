@@ -81,6 +81,17 @@ $(".scroll").on("click", function(event){
   $('html,body').animate({scrollTop:dest}, 200,'swing');
 });
 
+$(".scrollTop").on("click", function(event){
+  event.preventDefault();
+  var dest=0;
+  if ($(this.hash).offset().top > $(document).height()-$(window).height()){
+       dest=$(document).height()-$(window).height();
+  } else {
+       dest=$(this.hash).offset().top - 25;
+  }
+  $('html,body').animate({scrollTop:dest}, 200,'swing');
+});
+
 
 $('.colors > div').on('mouseover', function() {
   $(this).children().addClass('opac');
@@ -89,6 +100,15 @@ $('.colors > div').on('mouseover', function() {
 $('.colors > div').on('mouseout', function() {
   $(this).children().removeClass('opac');
 });
+
+window.addEventListener('scroll', function() { 
+  if(window.scrollY > 500) {
+    $('.scrollTop').addClass('opac');
+  }
+  else {
+    $('.scrollTop').removeClass('opac');
+  }
+},false);
 
 // git add .
 // git commit -m "message"
