@@ -647,7 +647,7 @@ nav {
             .inner-content {
                 display: flex;
                 flex-wrap: wrap;
-                width: 420px;
+                width: 380px;
                 padding: 40px 0 0 0;
                 justify-content: end;
                 div {
@@ -674,9 +674,9 @@ nav {
 
         .buttons {
             .nav-icons {
-                width: 240px;
+                width: 320px;
                 div {
-                    width: 320px;
+                    width: 100%;
                 }
             }
             .toggleoff img, .toggleon img {
@@ -685,6 +685,59 @@ nav {
             .defaultbtn img, .darkbtn img, .deletebtn img {
                 width: 100px;
             }
+        }
+    }
+}
+
+.work-content-4 {
+    background-color: #333;
+    .inner-content {
+        display: flex;
+        max-width: 880px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        position: relative;
+        padding: 60px 0;
+        img {
+            margin: 10px;
+            width: 200px;
+        }
+        .txt-block {
+            width: 420px;
+            padding: 40px;
+            position: absolute;
+            border-top: 5px solid $link-color;
+            background-color: #222;
+            bottom: 280px;
+            right: 10px;
+            h1 {
+                margin-bottom: 20px;
+                text-transform: capitalize;
+            }
+            p {
+                line-height: 25px;
+                font-size: $p;
+            }
+        }
+    }
+}
+
+.work-content-5 {
+    .bg-color-block {
+        background-color: #222;
+        text-align: center;
+        padding: 60px 0 0;
+        height: 500px;
+    }
+    .inner-content {
+        position: relative;
+        padding-bottom: 70px;
+        img {
+            width: 850px;
+            margin: 0 auto;
+            display: block;
+            margin-top: -350px;
         }
     }
 }
