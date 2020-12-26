@@ -97,17 +97,84 @@
         }
     }
 
-    .hydrate.work-content-5 img {
-        width: 100% !important;
-        padding: 0 10px;
+    .hydrate.work-content-1 {
+        display: block;
+        .txt-block {
+            top: unset;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            transform: unset;
+        }
+        .img-block {
+            width: 100%;
+            height: 534px;
+        }
     }
-    .hydrate.work-content-5 .bg-color-block {
-        width: 110%;
-        margin-left: -20px;
+
+    .hydrate.work-content-2 {
+        height: auto;
+        .inner-content {
+            display: block;
+            padding: 20px 40px 0;
+            .color-blocks {
+                margin-right: 30px;
+                br {
+                    display: none;
+                }
+                .prim-color {
+                    margin-right: 30px;
+                }
+            }
+            .txt-block {
+                width: 100%;
+                position: relative !important;
+            }
+            .font {
+                display: inline-block;
+            }
+            .logo-container {
+                margin: 30px 0;
+            }
+        }
     }
+
     .hydrate.work-content-3 {
         .inner-content {
             display: block;
+            .nav-icons {
+                display: inline-block;
+                margin-right: 30px;
+            }
+            .drink-icons {
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+
+    .hydrate.work-content-5 {
+        .inner-content {
+            padding: 0 30px;
+            img {
+                width: 100% !important;
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 879px) {
+    .hydrate.work-content-4 {
+        .inner-content {
+            justify-content: center;
+            .txt-block {
+                position: relative !important;
+                width: 100% !important; 
+                margin: 0 20px 20px;
+                bottom: unset !important;
+                right: unset !important;
+            }
         }
     }
 }
@@ -149,6 +216,35 @@
     }
 }
 
+@media screen and (max-width: 743px) {
+    .hydrate.work-content-2 {
+        .inner-content {
+            .font {
+                margin: 30px 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .hydrate.work-content-3 {
+        .inner-content {
+            justify-content: flex-start;
+            .nav-icons {
+                margin-right: 0;
+                width: 100%;
+            }
+            .drink-icons {
+                width: 100%;
+                margin: 50px 0 50px -30px;
+                .inner-content {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 659px) {
     .section.work {
         .flex-container {
@@ -182,7 +278,7 @@
             justify-content: center;
         }
     }
-    body {
+    .main {
         padding: 0 20px;
     }
     .section.experience {
@@ -217,11 +313,62 @@
             }
         }
     }
+    .hydrate.hero {
+        .hero-desc {
+            margin: 0;
+            .inner-hero-box {
+                width: 100%;
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 425px) {
     .section.experience {
         height: 760px;
+    }
+    .hydrate.hero {
+        .hero-desc {
+            .inner-hero-box {
+                h1 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .hydrate.work-content-3 {
+        .inner-content {
+            padding: 0 40px 40px;
+            .drink-icons {
+                margin: 50px 0 50px -20px;
+                .inner-content {
+                    div {
+                        flex: 0 0 110px;
+                    }
+                }
+            }
+        }
+    }
+    .hydrate.work-content-4 {
+        .inner-content {
+            img {
+                width: 40%;
+            }
+        }
+    }
+    .hydrate.work-content-5 {
+        .inner-content {
+            padding: 0 10px;
+            img:first-child {
+                display: none;
+            }
+            img:last-child {
+                display: block;
+            }
+        }
     }
 }
 

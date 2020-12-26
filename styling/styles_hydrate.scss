@@ -380,5 +380,8 @@
             display: block;
             margin-top: -350px;
         }
+        img:last-child {
+            display: none;
+        }
     }
 }
