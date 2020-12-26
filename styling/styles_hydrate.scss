@@ -25,6 +25,7 @@
             width: 500px;
             h1 {
                 margin: 10px 0;
+                font-size: $page-title;
             }
             .small-header {
                 margin: 20px 0 10px;
@@ -99,7 +100,7 @@
         width: 100%;
         margin: 0 auto;
         position: relative;
-        padding: 60px;
+        padding: 80px 0;
         display: flex;
         justify-content: space-evenly;
         .txt-block {
