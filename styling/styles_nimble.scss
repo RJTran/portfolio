@@ -385,9 +385,25 @@
                 }
             }
         }
+        .live-imgs {
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+            div {
+                width: 50%;
+                height: 750px;
+                background-color: white;
+                img {
+                    width: 100%;
+                }
+            }
+            div:first-child{
+                background-color: #eee;
+            }
+        }
         .inside-final {
             width: 55%;
-            margin-top: 100px;
+            margin-top: 50px;
             img {
                 width: 100%;
             }
