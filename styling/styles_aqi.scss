@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+.aqi.hero {
+    display: flex;
+    margin-bottom: 50px;
+    .hero-img {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 650px;
+            position: absolute;
+            right: 0;
+            top: -50px;
+        }
+    }
+    .hero-img img {
+        top: 0;
+    }
+    .hero-desc {
+        display: flex;
+        width: 100%;
+        max-width: 1100px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        .inner-hero-box {
+            width: 600px;
+            .logo-box {
+                border-radius: 99px;
+                width: 75px;
+                height: 75px;
+                display: inline-block;
+                overflow: hidden;
+                background-color: #fff;
+                position: relative;
+                img {
+                    width: 70%;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+            }
+            h1 {
+                margin: 10px 0;
+                font-size: $page-title;
+            }
+            .small-header {
+                margin: 20px 0 10px;
+                position: relative;
+                font-size: $p - 2;
+                font-weight: 600;
+                &::after {
+                    content: '';
+                    width: 15px;
+                    background-color: #5affe6;
+                    height: 2px;
+                    position: absolute;
+                    top: 28px;
+                    left: 0;
+                }
+            }
+            p {
+                line-height: 25px;
+                a {
+                    color: $link-color;
+                    text-decoration: none;
+                }
+            }
+            ul {
+                line-height: 25px;
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+}
+
+.aqi.work-content-1 {
+    display: flex;
+    background-color: #222;
+    height: 90vh;
+    position: relative;
+    justify-content: flex-end;
+    .txt-block {
+        width: 530px;
+        padding: 40px;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+        position: absolute;
+        border-top: 5px solid $link-color;
+        background-color: #222;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 10%;
+        h1 {
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+        p {
+            line-height: 25px;
+            font-size: $p;
+        }
+    }
+    .img-block {
+        background-color: #eee;
+        width: 65%;
+
+    }
+}
+
+.large-gif {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}

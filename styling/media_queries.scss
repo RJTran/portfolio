@@ -195,6 +195,9 @@
     }
 
     .nimble.work-content-4 {
+        h1 {
+            padding: 60px 0 0;
+        }
         .inner-content {
             display: block;
             text-align: center;
@@ -218,6 +221,7 @@
     .nimble.work-content-5 {
         .inner-content {
             .flex-wrap {
+                margin-top: -360px;
                 .mobile-final {
                     margin-right: 20px;
                 }
