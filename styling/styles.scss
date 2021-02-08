@@ -300,11 +300,13 @@ nav {
                     height: 100%;
                     display: flex;
                     justify-content: center;
+                    text-align: center;
                     align-items: center;
                     transition: .2s ease;
                     color: #fff;
                     background-color: rgba(0, 0, 0, 0.5);
                     font-size: $p2;
+                    padding: 10px;
                     &:hover {
                         opacity: 1;
                     }
@@ -407,4 +409,5 @@ nav {
 @import 'styles_jb';
 @import 'styles_aqi';
 @import 'styles_gl';
+@import 'styles_ga';
 @import 'media_queries';
