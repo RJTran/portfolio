@@ -315,6 +315,40 @@ nav {
         }
     }
 }
+
+.ga.hero {
+    .hero-desc {
+        .inner-hero-box {
+            .email-link, .linkedin-link {
+                margin: 20px;
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    font-size: $p2;
+                    display: inline-flex;
+                    align-items: center;
+                    color: $link-color;
+                    svg {
+                        height: 35px;
+                        display: inline-block;
+                    }
+                    p {
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ga.footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .slide {
     left: 50% !important;
     transform: translate(-50%, 0);
@@ -403,6 +437,7 @@ nav {
         color: #fff;
     }
 }
+
 
 @import 'styles_hydrate';
 @import 'styles_nimble';
