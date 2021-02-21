@@ -21,14 +21,14 @@ function minjs() {
 }
 
 function watch() {
-    browserSync.init({
-        server: {
-            baseDir: './'
-        }
-    });
+    // browserSync.init({
+    //     server: {
+    //         baseDir: './'
+    //     }
+    // });
     gulp.watch('./styling/*.scss', style);
     gulp.watch('./app.js', minjs);
-    gulp.watch('./*.html').on('change', browserSync.reload);
+    // gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
 exports.style = style;
