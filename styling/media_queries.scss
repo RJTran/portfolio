@@ -239,11 +239,6 @@
             .inside-final {
                 width: 85%;
             }
-            .live-imgs {
-                div {
-                    height: 630px;
-                }
-            }
         }
     }
 
@@ -327,8 +322,9 @@
     .nimble.work-content-5 {
         .inner-content {
             .live-imgs {
+                flex-wrap: wrap;
                 div {
-                    height: 360px;
+                    width: 100%;
                 }
             }
         }
