@@ -319,6 +319,8 @@ nav {
 
 .ga.hero {
     .hero-desc {
+        position: relative;
+        z-index: 2;
         .inner-hero-box {
             .email-link, .linkedin-link {
                 margin: 20px 20px 0;
