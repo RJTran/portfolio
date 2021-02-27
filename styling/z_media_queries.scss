@@ -6,6 +6,11 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+    .port.work-content-1 {
+        .txt-block {
+
+        }
+    }
 }
 
 @media screen and (max-width: 1140px) {
@@ -252,6 +257,20 @@
             }
         }
     }
+
+    .port.work-content-1 {
+        .inner-content {
+            margin-top: -400px;
+            .imgs {
+                width: 100%;
+                margin: 40px;
+            }
+            .txt-block {
+                width:  100%;
+                margin: 40px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 879px) {
@@ -475,7 +494,7 @@
             }
         }
     }
-    .ga.hero {
+    .port.hero {
         .hero-desc {
             margin: 0;
             .inner-hero-box {
@@ -518,6 +537,17 @@
                 h1 {
                     font-size: 40px;
                 }
+            }
+        }
+    }
+    .port.work-content-1 {
+        .inner-content {
+            .imgs {
+                margin: 20px;
+            }
+            .txt-block {
+                margin: 20px;
+                padding: 20px;
             }
         }
     }

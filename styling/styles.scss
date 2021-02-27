@@ -317,7 +317,7 @@ nav {
     }
 }
 
-.ga.hero {
+.port.hero {
     .hero-desc {
         position: relative;
         z-index: 2;
@@ -345,7 +345,7 @@ nav {
     }
 }
 
-.ga.footer {
+.port.footer {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -447,5 +447,5 @@ nav {
 @import 'styles_jb';
 @import 'styles_aqi';
 @import 'styles_gl';
-@import 'styles_ga';
+@import 'styles_port';
 @import 'z_media_queries';
