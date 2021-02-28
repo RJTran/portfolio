@@ -441,6 +441,29 @@ nav {
     }
 }
 
+.project-links {
+    list-style-type: none;
+    margin: 20px 40px 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: 10px;
+        a {
+            color: #999;
+            text-decoration: none;
+            &:hover {
+                cursor: pointer;
+                color: $link-color;
+                transition: .3s ease;
+            }
+        }
+    }
+    .active-link-footer {
+        color: $link-color;
+        font-weight: normal;
+        text-decoration: none;
+    }
+}
 
 @import 'styles_hydrate';
 @import 'styles_nimble';
