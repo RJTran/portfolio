@@ -36,3 +36,6 @@ exports.minjs = minjs;
 exports.watch = watch;
 
 //'gulp watch' will run watch function.
+// gulp watch will automatically compile scss and js
+// or manually run 'gulp style' or 'gulp minjs' to compile each.
+// run git commands to push live.
