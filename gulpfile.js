@@ -34,3 +34,5 @@ function watch() {
 exports.style = style;
 exports.minjs = minjs;
 exports.watch = watch;
+
+//'gulp watch' will run watch function.
