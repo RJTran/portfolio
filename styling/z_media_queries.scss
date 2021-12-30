@@ -423,14 +423,17 @@
             .tabs {
                 ul {
                     li {
-                        width: 45px;
+                        width: 97px;
                         margin: 30px 3px;
                         a {
                             padding: 10px 0 16px;
                         }
                     }
-                    li:first-child, li:last-child {
+                    li:first-child {
                         width: 100px;
+                    }
+                    li:last-child {
+                        width: 45px;
                     }
                 }
             }
